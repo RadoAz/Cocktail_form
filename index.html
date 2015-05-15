@@ -1,24 +1,287 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   <title>Форма для коктейлей</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
   <section class="title-box">
-
+    <fieldset>
+      <div class="title-left">
+        <legend>Описание</legend>
+        <label>
+          <p>Название коктейля</p>
+          <input type="text" name="cocktail_name">
+        </label>
+        <label>
+          <p>Альтернативные названия (через запятую):</p>
+          <input type="text" name="alt_cocktail_name">
+        </label>
+        <p>Краткое описание</p>
+        <textarea name="short_decription" cols="20" rows="10"></textarea>
+        <p>Краткое описание</p>
+        <textarea name="recipe" cols="20" rows="10"></textarea>
+      </div>
+      <div class="title-right">
+        <h1>О вкусах не спорят</h1>
+        <h3>Выбери свой напиток</h3>
+        <img src="imgs/cocktail.png">
+      </div>
+    </fieldset>
   </section>
   <section class="second-box">
-
+    <fieldset>
+      <legend>Ингредиенты</legend>
+      <p>Название:</p>
+      <p>Кол-во:</p>
+      <p>Еденица:</p>
+      <p>Украшение:</p>
+      <select>
+        <option>Нет</option>
+        <option>Bitter Lemon</option>
+        <option>Настойка лимонная</option>
+        <option>Настойка апельсиновая</option>
+        <option>Водка</option>
+        <option>Кофе</option>
+        <option>Спрайт</option>
+        <option>Кока-кола</option>
+      </select>
+      <input type="text" placeholder="-">
+      <select>
+        <option>-</option>
+        <option>Стакан</option>
+        <option>мл</option>
+        <option>рюмка</option>
+      </select>
+      <input type="checkbox">
+      <select>
+        <option>Нет</option>
+        <option>Bitter Lemon</option>
+        <option>Настойка лимонная</option>
+        <option>Настойка апельсиновая</option>
+        <option>Водка</option>
+        <option>Кофе</option>
+        <option>Спрайт</option>
+        <option>Кока-кола</option>
+      </select>
+      <input type="text" placeholder="-">
+      <select>
+        <option>-</option>
+        <option>Стакан</option>
+        <option>мл</option>
+        <option>рюмка</option>
+      </select>
+      <input type="checkbox">
+      <select>
+        <option>Нет</option>
+        <option>Bitter Lemon</option>
+        <option>Настойка лимонная</option>
+        <option>Настойка апельсиновая</option>
+        <option>Водка</option>
+        <option>Кофе</option>
+        <option>Спрайт</option>
+        <option>Кока-кола</option>
+      </select>
+      <input type="text" placeholder="-">
+      <select>
+        <option>-</option>
+        <option>Стакан</option>
+        <option>мл</option>
+        <option>рюмка</option>
+      </select>
+      <input type="checkbox">
+      <select>
+        <option>Нет</option>
+        <option>Bitter Lemon</option>
+        <option>Настойка лимонная</option>
+        <option>Настойка апельсиновая</option>
+        <option>Водка</option>
+        <option>Кофе</option>
+        <option>Спрайт</option>
+        <option>Кока-кола</option>
+      </select>
+      <input type="text" placeholder="-">
+      <select>
+        <option>-</option>
+        <option>Стакан</option>
+        <option>мл</option>
+        <option>рюмка</option>
+      </select>
+      <input type="checkbox">
+      <select>
+        <option>Нет</option>
+        <option>Bitter Lemon</option>
+        <option>Настойка лимонная</option>
+        <option>Настойка апельсиновая</option>
+        <option>Водка</option>
+        <option>Кофе</option>
+        <option>Спрайт</option>
+        <option>Кока-кола</option>
+      </select>
+      <input type="text" placeholder="-">
+      <select>
+        <option>-</option>
+        <option>Стакан</option>
+        <option>мл</option>
+        <option>рюмка</option>
+      </select>
+      <input type="checkbox">
+      <select>
+        <option>Нет</option>
+        <option>Bitter Lemon</option>
+        <option>Настойка лимонная</option>
+        <option>Настойка апельсиновая</option>
+        <option>Водка</option>
+        <option>Кофе</option>
+        <option>Спрайт</option>
+        <option>Кока-кола</option>
+      </select>
+      <input type="text" placeholder="-">
+      <select>
+        <option>-</option>
+        <option>Стакан</option>
+        <option>мл</option>
+        <option>рюмка</option>
+      </select>
+      <input type="checkbox">
+      <select>
+        <option>Нет</option>
+        <option>Bitter Lemon</option>
+        <option>Настойка лимонная</option>
+        <option>Настойка апельсиновая</option>
+        <option>Водка</option>
+        <option>Кофе</option>
+        <option>Спрайт</option>
+        <option>Кока-кола</option>
+      </select>
+      <input type="text" placeholder="-">
+      <select>
+        <option>-</option>
+        <option>Стакан</option>
+        <option>мл</option>
+        <option>рюмка</option>
+      </select>
+      <input type="checkbox">
+    </fieldset>
+    <fieldset>
+      <legend>Параметры</legend>
+      <p>Количество порций</p>
+      <select name="portion_number">
+        <option value="1">1 порция</option>
+        <option value="2">2 порции</option>
+        <option value="3">3 порции</option>
+        <option value="4">4 порции</option>
+      </select>
+      <p>Время приготовления</p>
+      <select name="time2do">
+        <option value="1min">1 минута</option>
+        <option value="2min">2 минуты</option>
+        <option value="3min">3 минуты</option>
+        <option value="4min">4 минуты</option>
+      </select>
+      <p>Сложность приготовления</p>
+      <select name="portion_number">
+        <option value="3">Легкая (3 балла)</option>
+        <option value="6">Средняя (6 баллов)</option>
+        <option value="9">Сложная (9 баллов)</option>
+        <option value="12">Супер сложная (12 баллов)</option>
+      </select>
+      <p>Метод приготовления</p>
+      <select name="portion_number">
+        <option value="glass">В бокале</option>
+        <option value="mixer">В миксере</option>
+        <option value="blender">В блендере</option>
+        <option value="banka">В банке</option>
+      </select>
+    </fieldset>
   </section>
   <section class="photo-box">
-
+    <p class="decor-pointer">Фотография</p>
+    <div class="img-holder">
+      <img src="imgs/mini-img.png">
+    </div>
+    <a href="#">Щелкните, чтобы посмотреть в полный размер</a>
+    <hr>
+    <input type="file" name="cocktail-picture">
   </section>
   <section class="cocktail-type">
-
+    <p class="heading_decor light-orange">Тип коктейля</p>
+    <p class="left-border border-orange-gradient">По крепости:</p>
+    <form>
+      <label><input type="radio" name="strength" value="N/A"><p>Безалкогольные</p></label>
+      <label><input type="radio" name="strength" value="light"><p>Слабоалкогольные (6%-15%)</p></label>
+      <label><input type="radio" name="strength" value="middle"><p>Полукрепкие (16-22%)</p></label>
+      <label><input type="radio" name="strength" value="hard"><p>Крепкие (более 22%)</p></label>
+    </form>
+    <p class="left-border border-green-gradient">На основе</p>
+    <form>
+      <label><input type="radio" name="based_on" value=""><p>Абсента</p></label>
+      <label><input type="radio" name="based_on" value=""><p>Водки</p></label>
+      <label><input type="radio" name="based_on" value=""><p>Джина</p></label>
+      <label><input type="radio" name="based_on" value=""><p>Виски</p></label>
+      <label><input type="radio" name="based_on" value=""><p>Бренди</p></label>
+      <label><input type="radio" name="based_on" value=""><p>Ликера</p></label>
+      <label><input type="radio" name="based_on" value=""><p>Кальвадоса</p></label>
+      <label><input type="radio" name="based_on" value=""><p>Текилы</p></label>
+      <label><input type="radio" name="based_on" value=""><p>Рома</p></label>
+      <label><input type="radio" name="based_on" value=""><p>Вина</p></label>
+      <label><input type="radio" name="based_on" value=""><p>Пива</p></label>
+      <label><input type="radio" name="based_on" value=""><p>Чая</p></label>
+      <label><input type="radio" name="based_on" value=""><p>Кофе</p></label>
+      <label><input type="radio" name="based_on" value=""><p>Самогона</p></label>
+      <label><input type="radio" name="based_on" value=""><p>Наливочки</p></label>
+    </form>
+    <p class="left-border border-blue-gradient">По типу</p>
+    <form>
+      <label><input type="radio" name="type_of" value=""><p>Аперитивы</p></label>
+      <label><input type="radio" name="type_of" value=""><p>Диджестивы</p></label>
+      <label><input type="radio" name="type_of" value=""><p>Горячие</p></label>
+      <label><input type="radio" name="type_of" value=""><p>Молочные</p></label>
+      <label><input type="radio" name="type_of" value=""><p>Десертные</p></label>
+      <label><input type="radio" name="type_of" value=""><p>Слоистые</p></label>
+      <label><input type="radio" name="type_of" value=""><p>Дейзи</p></label>
+      <label><input type="radio" name="type_of" value=""><p>Джулепы</p></label>
+      <label><input type="radio" name="type_of" value=""><p>Кардиналы</p></label>
+      <label><input type="radio" name="type_of" value=""><p>Коблеры</p></label>
+      <label><input type="radio" name="type_of" value=""><p>Коллинзы</p></label>
+    </form>
+    <p class="heading_decor dark-orange">Теги</p>
+    <form>
+      <label><input type="checkbox" name="tag" value=""><p>Бодрящие</p></label>
+      <label><input type="checkbox" name="tag" value=""><p>Горькие</p></label>
+      <label><input type="checkbox" name="tag" value=""><p>Для компании</p></label>
+      <label><input type="checkbox" name="tag" value=""><p>Кислые</p></label>
+      <label><input type="checkbox" name="tag" value=""><p>Лонгдринк</p></label>
+      <label><input type="checkbox" name="tag" value=""><p>Необычные по употреблению</p></label>
+      <label><input type="checkbox" name="tag" value=""><p>Овощные</p></label>
+      <label><input type="checkbox" name="tag" value=""><p>Огненные</p></label>
+      <label><input type="checkbox" name="tag" value=""><p>Освежающие</p></label>
+    </form>
+    <p class="heading_decor light-blue">Бокалы</p>
+    <form>
+      <label><input type="radio" name="type_of" value=""><p>Бокал для белого вина</p></label>
+      <label><input type="radio" name="type_of" value=""><p>Бокал для красного вина</p></label>
+      <label><input type="radio" name="type_of" value=""><p>Бокал для слоистых коктейлей</p></label>
+      <label><input type="radio" name="type_of" value=""><p>Бокал сауэр</p></label>
+      <label><input type="radio" name="type_of" value=""><p>Бокал харикейн</p></label>
+      <label><input type="radio" name="type_of" value=""><p>Граненый стакан</p></label>
+    </form>
+    <p class="heading_decor light-orange">Украшения</p>
+    <form>
+      <label><input type="checkbox" name="accessorize" value=""><p>Апельсин на бокале</p></label>
+      <label><input type="checkbox" name="accessorize" value=""><p>Веточка мяты</p></label>
+      <label><input type="checkbox" name="accessorize" value=""><p>Взбитые сливки с вишней</p></label>
+      <label><input type="checkbox" name="accessorize" value=""><p>Виноград на шпажке</p></label>
+      <label><input type="checkbox" name="accessorize" value=""><p>Вишенка на шпажке</p></label>
+      <label><input type="checkbox" name="accessorize" value=""><p>Долька мандарина</p></label>
+    </form>
   </section>
-  <section class="else-box">
-
+  <section class="buttons">
+    <input type="submit" name="send_form">
+    <input type="reset" value="Очистить форму">
   </section>
 </body>
 </html>
