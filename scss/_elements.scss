@@ -1,0 +1,155 @@
+legend {
+  width: 156px;
+  height: 18px;
+  background: orange;
+  border-radius: 25px;
+  font-family: $basefont;
+  font-size: 12px;
+  color: #fff;
+  position: absolute;
+  top: -9px;
+  text-align: center;
+  padding-top: 2px;
+  box-sizing: border-box;
+  @include legendorangebg;
+
+  &.legend-green {
+    @include legendgreenbg;
+  }
+
+  &.legend-blue {
+    @include legendbluebg;
+  }
+}
+
+.photo-box {
+
+  .decor-pointer {
+    background: #7d7d7d;
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    height: 18px;
+    margin-left: -19px;
+    margin-top: 28px;
+    padding-right: 7px;
+    padding-top: 3px;
+    position: relative;
+    text-align: right;
+    width: 100px;
+
+    &:after {
+      border-bottom: 9px solid transparent;
+      border-left: 9px solid #7d7d7d;
+      border-top: 9px solid transparent;
+      content: "";
+      display: block;
+      height: 0;
+      position: absolute;
+      right: -9px;
+      top: 0;
+      width: 0;
+    }
+  }
+
+  input[type="file"] {
+    margin-top: 25px;
+    float: right;
+    width: 106px;
+    height: 18px;
+  }
+}
+
+.cocktail-type {
+
+  .heading-decor {
+    display: block;
+    width: 144px;
+    height: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 6px;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 21px;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      position: absolute;
+      left: 67px;
+      bottom: -5px;
+    }
+  }
+
+  .darkorange {
+    @include darkorangebg;
+
+    &:after {
+      border-top: 5px solid #d88602;
+    }
+  }
+
+  .lightblue{
+    @include lightbluebg;
+
+    &:after {
+      border-top: 5px solid #02baed;
+    }
+  }
+
+  .lightorange {
+    @include lightorangebg;
+
+    &:after {
+      border-top: 5px solid #c72707;
+    }
+  }
+}
+
+.left-border {
+  border-left-width: 4px;
+  border-style: solid;
+  height: 16px;
+  padding-left: 9px;
+  padding-top: 3px;
+  box-sizing: border-box;
+  margin-left: 5px;
+  margin-bottom: 0;
+  margin-top: 21px;
+
+}
+
+.border-orange-gradient {
+  @include bordergradient(#e30613, #f2a13b);
+}
+
+.border-green-gradient {
+  @include bordergradient(#fffe9d, #7dc507);
+}
+
+.border-blue-gradient {
+  @include bordergradient(#baeffc, #0b8fcc);
+}
+
+.greendiv {
+  width: 0px;
+  height: 0px;
+  border-radius: 10px;
+  border: 10px solid green;
+}
+
+button {
+ width: 104px;
+ height: 22px;
+ border-radius: 15px;
+ @include buttonbg;
+}
+
+

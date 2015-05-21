@@ -1,0 +1,32 @@
+p {
+  font-family: $basefont;
+  color: $textcolor;
+  font-size: $fontsize;
+  margin-bottom: 6px;
+}
+
+.second-box > .params > p {
+  display: inline-block;
+}
+
+h1 {
+  font-size: 24px;
+  font-family: 'Myriad Pro';
+  @include h1color;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'PT Sans';
+  font-size: 14px;
+  color: #f3640d;
+}
+
+.photo-box {
+  a {
+    color: #333333;
+    font-family: $basefont;
+    margin-top: 25px;
+    margin-left: 17px;
+  }
+}

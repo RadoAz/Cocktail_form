@@ -1,0 +1,146 @@
+fieldset, form {
+  @include basebackground;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.title-box {
+  .title-left, .title-right {
+    float: left;
+  }
+
+  .title-left{
+    width: 50%;
+  }
+
+  .title-right {
+    width: 50%;
+
+    .title-img-holder {
+      width: 49%;
+      margin: 45px auto 0 auto;
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.heading {
+  overflow: hidden;
+  margin: 23px auto 0 auto;
+  width: 225px;
+}
+
+.second-box {
+  position: relative;
+
+  .ingredients {
+    float: left;
+  }
+
+  .params {
+    position: absolute;
+    width: 45%;
+    bottom: 0;
+    right: 0;
+    top: 0;
+  }
+
+  .ingredients {
+    width: 46%;
+    margin-right: 27px;
+
+    .col {
+      float: left;
+      margin-right: 40px;
+
+      .col1, .col3 {
+      width: 24%;
+      }
+
+      .col2 {
+       width: 10%;
+      }
+
+      .col4 {
+       width: 42%;
+
+        > p {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+.photo-box {
+
+  fieldset {
+
+    * {
+      float: left;
+    }
+
+    .img-holder {
+      width: 62px;
+      height: 72px;
+      border: 1px solid #d2d2d2;
+      border-radius: 3px;
+      margin-left: 30px;
+      -webkit-box-shadow: 0px 0px 4px 1px rgba(236,236,236,1);
+      -moz-box-shadow: 0px 0px 4px 1px rgba(236,236,236,1);
+      box-shadow: 0px 0px 4px 1px rgba(236,236,236,1);
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.cocktail-type {
+
+  form * {
+    float: left;
+  }
+
+  form {
+    padding-bottom: 28px;
+
+    input[type="radio"] {
+      margin-top: -1px;
+      margin-right: 30px;
+    }
+  }
+
+  .colored_rads {
+    padding-left: 35px;
+
+    input[type="radio"] {
+    margin: 0;
+    margin-right: 3px;
+    }
+
+    p {
+      margin-right: 175px;
+    }
+  }
+
+  .based-on input[type="radio"] {
+    margin-right: 28px;
+  }
+
+  .by-type input[type="radio"] {
+    margin-right: 44px;
+  }
+
+  .glass-type input[type="radio"] {
+    margin-right: 82px;
+  }
+}

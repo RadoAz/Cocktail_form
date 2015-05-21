@@ -1,0 +1,60 @@
+input, select, textarea {
+  margin-bottom: 20px;
+}
+
+input {
+
+  &.title-text {
+    width: 43%;
+    height: 19px;
+  }
+
+  &.numberof {
+    width: 43px;
+  }
+}
+
+textarea {
+  width: 90%;
+  height: 125px;
+}
+
+input, textarea {
+  @include input-inner-shadow;
+}
+
+.second-box {
+
+  input {
+    clear: both;
+    display: block;
+  }
+
+  input[type="text"] {
+    margin-bottom: 21px;
+    height: 12px;
+    text-align: center;
+
+    &::-webkit-input-placeholder {
+      text-align: center;
+    }
+  }
+}
+
+input[type="checkbox"] {
+  margin: 0 0 26.5px 5px;
+}
+
+select {
+  clear: both;
+  display: block;
+  width: 157px;
+}
+
+form.by-tags input[type="checkbox"] {
+  margin-right: 54px;
+}
+
+form.accessorize-type input[type="checkbox"] {
+  margin-right: 84px;
+}
