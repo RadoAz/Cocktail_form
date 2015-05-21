@@ -1,9 +1,13 @@
 fieldset, form {
   @include basebackground;
   padding: 20px;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   position: relative;
   margin-bottom: 25px;
+  border-right: 1px solid #d0d0d0;
+  border-left: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
 }
 
 .title-box {
@@ -137,10 +141,21 @@ fieldset, form {
   }
 
   .by-type input[type="radio"] {
-    margin-right: 44px;
+    margin-right: 42px;
   }
 
   .glass-type input[type="radio"] {
-    margin-right: 82px;
+    margin-right: 80px;
   }
+}
+
+.range-container {
+  height: 28px;
+  width: 100%;
+  background: #eeeeee;
+  position: relative;
+  margin-top: -21px;
+  border-right: 1px solid #d0d0d0;
+  border-left: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
 }

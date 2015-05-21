@@ -78,6 +78,88 @@ form.by-tags input[type="checkbox"] {
 form.accessorize-type input[type="checkbox"] {
   margin-right: 84px; }
 
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 0;
+  width: 90%;
+  position: absolute;
+  top: 14px;
+  left: 62px; }
+
+input[type=range]:focus {
+  outline: none; }
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #fff, 0px 0px 1px #0d0d0d;
+  background: #acacac;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101; }
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #acacac;
+  height: 20px;
+  width: 10px;
+  border-radius: 3px;
+  background: #f9f9f9;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -10px; }
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #fff, 0px 0px 1px #0d0d0d;
+  background: #acacac;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101; }
+
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #acacac;
+  height: 20px;
+  width: 10px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer; }
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent; }
+
+input[type=range]::-ms-fill-lower {
+  background: #acacac;
+  border: 0.2px solid #acacac;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
+
+input[type=range]::-ms-fill-upper {
+  background: #acacac;
+  border: 0.2px solid #acacac;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
+
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #acacac;
+  height: 206px;
+  width: 10px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer; }
+
 fieldset, form {
   background-image: -ms-linear-gradient(top, #eeeeee 0%, #ffffff 50%, #eeeeee 100%);
   background-image: -moz-linear-gradient(top, #eeeeee 0%, #ffffff 50%, #eeeeee 100%);
@@ -86,9 +168,13 @@ fieldset, form {
   background-image: -webkit-linear-gradient(top, #eeeeee 0%, #ffffff 50%, #eeeeee 100%);
   background-image: linear-gradient(to bottom, #eeeeee 0%, #ffffff 50%, #eeeeee 100%);
   padding: 20px;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   position: relative;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  border-right: 1px solid #d0d0d0;
+  border-left: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0; }
 
 .title-box .title-left, .title-box .title-right {
   float: left; }
@@ -166,9 +252,19 @@ fieldset, form {
 .cocktail-type .based-on input[type="radio"] {
   margin-right: 28px; }
 .cocktail-type .by-type input[type="radio"] {
-  margin-right: 44px; }
+  margin-right: 42px; }
 .cocktail-type .glass-type input[type="radio"] {
-  margin-right: 82px; }
+  margin-right: 80px; }
+
+.range-container {
+  height: 28px;
+  width: 100%;
+  background: #eeeeee;
+  position: relative;
+  margin-top: -21px;
+  border-right: 1px solid #d0d0d0;
+  border-left: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0; }
 
 legend {
   width: 156px;
@@ -337,7 +433,66 @@ legend {
 button {
   width: 104px;
   height: 22px;
-  border-radius: 15px; }
+  border-radius: 15px;
+  position: relative;
+  background: #cdcdcd;
+  background: -moz-linear-gradient(top, #cdcdcd 0%, white 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #cdcdcd), color-stop(100%, white));
+  background: -webkit-linear-gradient(top, #cdcdcd 0%, white 100%);
+  background: -o-linear-gradient(top, #cdcdcd 0%, white 100%);
+  background: -ms-linear-gradient(top, #cdcdcd 0%, white 100%);
+  background: linear-gradient(to bottom, #cdcdcd 0%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdcdcd', endColorstr='#ffffff', GradientType=0 );
+  border: 1px solid #6f6f6f;
+  font-size: 12px;
+  font-family: "PT Sans";
+  margin-right: 20px; }
+  button:before {
+    content: "";
+    width: 94px;
+    height: 8px;
+    display: block;
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background: #f6f6f6;
+    background: -moz-linear-gradient(top, #f6f6f6 0%, rgba(235, 235, 235, 0.8) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #f6f6f6), color-stop(100%, rgba(235, 235, 235, 0.8)));
+    background: -webkit-linear-gradient(top, #f6f6f6 0%, rgba(235, 235, 235, 0.8) 100%);
+    background: -o-linear-gradient(top, #f6f6f6 0%, rgba(235, 235, 235, 0.8) 100%);
+    background: -ms-linear-gradient(top, #f6f6f6 0%, rgba(235, 235, 235, 0.8) 100%);
+    background: linear-gradient(to bottom, #f6f6f6 0%, rgba(235, 235, 235, 0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#ebebeb', GradientType=0 ); }
+  button p {
+    position: relative;
+    z-index: 1000; }
+
+.show-list {
+  width: 139px;
+  height: 19px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #d0d0d0;
+  background: -moz-linear-gradient(top, #d0d0d0 0%, #ededed 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #d0d0d0), color-stop(100%, #ededed));
+  background: -webkit-linear-gradient(top, #d0d0d0 0%, #ededed 100%);
+  background: -o-linear-gradient(top, #d0d0d0 0%, #ededed 100%);
+  background: -ms-linear-gradient(top, #d0d0d0 0%, #ededed 100%);
+  background: linear-gradient(to bottom, #d0d0d0 0%, #ededed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0d0d0', endColorstr='#ededed', GradientType=0 );
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 38px; }
+  .show-list a {
+    font-family: "PT Sans";
+    font-size: 12px;
+    border-bottom: 1px dotted #000; }
+
+.based-on + .show-list {
+  margin-bottom: 20px; }
 
 p {
   font-family: "PT Sans";
